@@ -21,6 +21,7 @@ html, body {
 .header__nav {
     margin-left: 51px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .header__nav-list {
@@ -153,6 +154,7 @@ html, body {
         background-color: #FFFFFF;
         height: 30px;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
     }
 
     .header__nav-mobile-item:nth-child(n+2) {
@@ -177,5 +179,107 @@ html, body {
 @media screen and (max-width: 320px) {
     .header {
         height: 56px;
+    }
+}
+
+.main {
+    outline: 1px solid black;
+    width: 100%;
+    min-width: 320px;
+}
+
+.main-header {
+    outline: solid 1px black;
+    width: 100%;
+}
+
+.main-header__container {
+    outline: solid 1px black;
+    margin: 0 auto;
+    padding-top: 19px;
+    width: 1200px;
+}
+
+.main-header__breadcrumps {
+    margin-left: 6px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12.5px;
+    color: #333333;
+}
+
+.main-header__breadcrumps li + li::before {
+    content: url(../images/nav-arrow-down.svg);
+    display: inline-block;
+    margin: 0 6px;
+    transform: rotate(-90deg);
+}
+
+.main-header__breadcrumps a {
+    text-decoration: none;
+}
+
+.main-header__breadcrumps a:hover {
+    text-decoration: underline;
+}
+
+.main-header__title {
+    outline: 1px solid black;
+    margin-top: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.main-header__filters {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 8px;
+}
+
+.main-header__filters-item button {
+    background-color: transparent;
+    border: 1px solid #C1C5CD;
+    border-radius: 24px;
+    padding: 0 8px;
+    height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main-header__filters-item_active button {
+    border: 2px solid #16C8BB;
+}
+
+.main-header__filters-item button:hover {
+    border: 2px solid #16C8BB;
+}
+
+@media screen and (max-width: 1280px) {
+    .main-header__container {
+        width: 93.75%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-header__title {
+        margin-top: 46px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-header__container {
+        overflow: hidden;
+    }
+
+    .main-header__filters {
+        flex-wrap: nowrap;
+        width: 2000px;
+        position: relative;
+        left: -110px;
     }
 }
