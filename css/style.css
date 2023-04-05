@@ -3,14 +3,14 @@ html, body {
 }
 
 .header {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     width: 100%;
     min-width: 320px;
     height: 76px;
 }
 
 .header__container {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@ html, body {
     }
 
     .header__nav-mobile-button {
-        outline: 1px solid black;
+        /* outline: 1px solid black; */
         border: none;
         background-image: url(../images/nav-burger-icon.svg);
         width: 18px;
@@ -147,6 +147,7 @@ html, body {
         top: 0;
         right: 19px;
         width: 150px;
+        z-index: 1;
     }
 
     .header__nav-mobile-item {
@@ -183,18 +184,18 @@ html, body {
 }
 
 .main {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     width: 100%;
     min-width: 320px;
 }
 
 .main-header {
-    outline: solid 1px black;
+    /* outline: solid 1px black; */
     width: 100%;
 }
 
 .main-header__container {
-    outline: solid 1px black;
+    /* outline: solid 1px black; */
     margin: 0 auto;
     padding-top: 19px;
     width: 1200px;
@@ -225,7 +226,7 @@ html, body {
 }
 
 .main-header__title {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     margin-top: 36px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -284,14 +285,35 @@ html, body {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .main-header__title {
+        margin-top: 34px;
+        margin-left: 8px;
+        font-size: 32px;
+    }
+
+    .main-header__filters {
+        margin-top: 28px;
+        left: -124px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-header__title {
+        margin-top: 37px;
+        margin-left: 4px;
+        font-size: 25px;
+    }
+}
+
 .big-articles {
-    outline: solid 1px black;
+    /* outline: solid 1px black; */
     padding-top: 25px;
     width: 100%;
 }
 
 .big-articles__container {
-    outline: solid 1px black;
+    /* outline: solid 1px black; */
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -299,7 +321,8 @@ html, body {
 }
 
 .big-articles__item {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
+    border: 1px solid #DEDEDE;
     border-radius: 20px;
     position: relative;
     background-color: #FFFFFF;
@@ -310,7 +333,7 @@ html, body {
 }
 
 .big-articles__item-label {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     position: absolute;
     top: 8px;
     left: 10px;
@@ -340,6 +363,8 @@ html, body {
 .big-articles__item-image {
     width: 100%;
     height: 52%;
+    object-fit: cover;
+    width: 100%;
 }
 
 .big-articles__item-title {
@@ -369,4 +394,71 @@ html, body {
     font-weight: 400;
     line-height: 1.3;
     color: #333333;
+}
+
+.big-articles__item-pubdate {
+    position: absolute;
+    left: 2.8%;
+    bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: #868686;
+}
+
+@media screen and (max-width: 1280px) {
+    .big-articles__container {
+        width: 93.75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .big-articles__container {
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-gap: 3vw;
+    }
+
+    .big-articles__item {
+        width: 100%;
+        height: 599px;
+    }
+
+    .big-articles__item-image {
+        height: 67%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .big-articles__item {
+        width: 97%;
+        height: 462px;
+    }
+
+    .big-articles__item-image {
+        height: 43%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .big-articles__container {
+        padding-top: 18px;
+        grid-gap: 4vw;
+    }
+
+    .big-articles__item {
+        height: 484px;
+    }
+
+    .big-articles__item-title {
+        margin-top: 9px;
+    }
+
+    .big-articles__item-title, .big-articles__item-author, .big-articles__item-description {
+        width: 88%;
+    }
+
+    .big-articles__item-pubdate {
+        left: 6%;
+    }
 }
