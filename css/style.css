@@ -207,7 +207,6 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 12.5px;
-    color: #333333;
 }
 
 .main-header__breadcrumps li + li::before {
@@ -218,6 +217,7 @@ html, body {
 }
 
 .main-header__breadcrumps a {
+    color: #333333;
     text-decoration: none;
 }
 
