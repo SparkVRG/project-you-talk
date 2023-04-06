@@ -132,8 +132,8 @@ html, body {
     }
 
     .header__nav-mobile-button {
+        padding: 0;
         border: none;
-        background-image: url(../images/nav-burger-icon.svg);
         width: 18px;
         height: 14px;
         cursor: pointer;
