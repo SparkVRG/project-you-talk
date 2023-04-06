@@ -3,14 +3,12 @@ html, body {
 }
 
 .header {
-    /* outline: 1px solid black; */
     width: 100%;
     min-width: 320px;
     height: 76px;
 }
 
 .header__container {
-    /* outline: 1px solid black; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -134,7 +132,6 @@ html, body {
     }
 
     .header__nav-mobile-button {
-        /* outline: 1px solid black; */
         border: none;
         background-image: url(../images/nav-burger-icon.svg);
         width: 18px;
@@ -175,6 +172,43 @@ html, body {
     .header__nav-mobile-item a:hover {
         text-decoration: underline;
     }
+
+    .header__nav-mobile-item_submenu {
+        position: relative;
+    }
+    
+    .header__nav-mobile-item-submenu-list {
+        position: absolute;
+        width: 115px;
+        top: -1px;
+        left: -115px;
+    }
+    
+    .header__nav-mobile-item-submenu-item {
+        border: 1px solid #000000;
+        background-color: #FFFFFF;
+        padding: 5px;
+        height: 20px;
+    }
+    
+    .header__nav-mobile-item-submenu-item:nth-child(n+2) {
+        border-top: none;
+    }
+    
+    .header__nav-mobile-item-submenu-item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header__nav-mobile-item_submenu > a::before {
+        content: url(../images/nav-arrow-down.svg);
+        display: inline-block;
+        margin-right: 10px;
+        transform: rotate(90deg);
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -184,19 +218,16 @@ html, body {
 }
 
 .main {
-    /* outline: 1px solid black; */
     width: 100%;
     min-width: 320px;
     overflow: hidden;
 }
 
 .main-header {
-    /* outline: solid 1px black; */
     width: 100%;
 }
 
 .main-header__container {
-    /* outline: solid 1px black; */
     margin: 0 auto;
     padding-top: 19px;
     width: 1200px;
@@ -227,7 +258,6 @@ html, body {
 }
 
 .main-header__title {
-    /* outline: 1px solid black; */
     margin-top: 36px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -308,13 +338,11 @@ html, body {
 }
 
 .big-articles {
-    /* outline: solid 1px black; */
     padding-top: 25px;
     width: 100%;
 }
 
 .big-articles__container {
-    /* outline: solid 1px black; */
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -332,7 +360,6 @@ html, body {
 }
 
 .big-articles__item {
-    /* outline: 1px solid black; */
     border: 1px solid #DEDEDE;
     border-radius: 20px;
     position: relative;
@@ -343,7 +370,6 @@ html, body {
 }
 
 .big-articles__item-label {
-    /* outline: 1px solid black; */
     position: absolute;
     top: 8px;
     left: 10px;
@@ -477,13 +503,11 @@ html, body {
 }
 
 .small-articles {
-    /* outline: solid 1px black; */
     padding-top: 22px;
     width: 100%;
 }
 
 .small-articles__container {
-    /* outline: solid 1px black; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -505,7 +529,6 @@ html, body {
 }
 
 .small-articles__item-label {
-    /* outline: 1px solid black; */
     position: absolute;
     top: 6px;
     left: 6px;
@@ -691,14 +714,12 @@ html, body {
 }
 
 .footer__container {
-    /* outline: 1px solid black; */
     margin: 0 auto;
     width: 1200px;
     height: 100%;
 }
 
 .footer__topside {
-    /* outline: 1px solid black; */
     display: flex;
     padding-top: 45px;
     width: 100%;
@@ -706,7 +727,6 @@ html, body {
 }
 
 .footer__nav {
-    /* outline: 1px solid black; */
     display: flex;
     justify-content: space-between;
     width: 309px;
@@ -729,7 +749,6 @@ html, body {
 }
 
 .footer__subscribe {
-    /* outline: 1px solid black; */
     margin-top: -4px;
     margin-left: 98px;
     width: 458px;
@@ -783,7 +802,6 @@ html, body {
 }
 
 .footer__subscribe-accept {
-    /* outline: 1px solid black; */
     margin-top: 7px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12.5px;
@@ -793,14 +811,12 @@ html, body {
 }
 
 .footer__contacts {
-    /* outline: 1px solid black; */
     margin-top: -6px;
     margin-left: 53px;
     width: 223px;
 }
 
 .footer__contacts-main {
-    /* outline: 1px solid black; */
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -822,7 +838,6 @@ html, body {
 }
 
 .footer__downside {
-    /* outline: 1px solid black; */
     display: flex;
     align-items: center;
     width: 100%;

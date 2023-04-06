@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <header class="header">
         <div class="header__container">
             <a href="#">
-                <img src="images/logo.png" alt="Логотип YouTalk">
+                <img src="images/logo.svg" alt="Логотип YouTalk">
             </a>
             <nav class="header__nav">
                 <ul class="header__nav-list">
@@ -78,8 +78,25 @@
                     <li class="header__nav-mobile-item">
                         <a href="#">Сертификат</a>
                     </li>
-                    <li class="header__nav-mobile-item">
-                        <a href="#">Материалы</a>
+                    <li class="header__nav-mobile-item header__nav-mobile-item_submenu">
+                        <a href="#" onclick="navMobileSubmenuToggle()">Материалы</a>
+                        <ul class="header__nav-mobile-item-submenu-list" style="display: none">
+                            <li class="header__nav-mobile-item-submenu-item">
+                                <a href="#">Материал 1</a>
+                            </li>
+                            <li class="header__nav-mobile-item-submenu-item">
+                                <a href="#">Материал 2</a>
+                            </li>
+                            <li class="header__nav-mobile-item-submenu-item">
+                                <a href="#">Материал 3</a>
+                            </li>
+                            <li class="header__nav-mobile-item-submenu-item">
+                                <a href="#">Материал 4</a>
+                            </li>
+                            <li class="header__nav-mobile-item-submenu-item">
+                                <a href="#">Материал 5</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__nav-mobile-item">
                         <a href="#">FAQ</a>
@@ -148,7 +165,7 @@
                     <h2 class="big-articles__item-title">Эмоциональное выгорание - стадии и симптомы, методы восстановления и профилактики</h2>
                     <p class="big-articles__item-author">Автор: Лиза Файнтух</p>
                     <p class="big-articles__item-description">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
-                    <time pubdate datetime="2021-08-21" class="big-articles__item-pubdate">21.08.2021</time>
+                    <time datetime="2021-08-21" class="big-articles__item-pubdate">21.08.2021</time>
                 </article>
                 <article class="big-articles__item">
                     <ul class="big-articles__item-label">
@@ -160,7 +177,7 @@
                     <h2 class="big-articles__item-title">Как не утонуть в тревоге и управлять своими страхами</h2>
                     <p class="big-articles__item-author">Автор: Екатерина Бельтюкова</p>
                     <p class="big-articles__item-description">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-                    <time pubdate datetime="2021-08-11" class="big-articles__item-pubdate">11.08.2021</time>
+                    <time datetime="2021-08-11" class="big-articles__item-pubdate">11.08.2021</time>
                 </article>
             </div>
         </section>
@@ -179,7 +196,7 @@
                     <h2 class="small-articles__item-title">Эмоциональное выгорание - стадии и симптомы, методы восстановления и профилактики</h2>
                     <p class="small-articles__item-author">Автор: Лиза Файнтух</p>
                     <p class="small-articles__item-description">Изначально термин «эмоциональное профессиональной сфере и...</p>
-                    <time pubdate datetime="2021-08-21" class="small-articles__item-pubdate">21.08.2021</time>
+                    <time datetime="2021-08-21" class="small-articles__item-pubdate">21.08.2021</time>
                 </article>
                 <article class="small-articles__item">
                     <ul class="small-articles__item-label">
@@ -191,7 +208,7 @@
                     <h2 class="small-articles__item-title">Как не утонуть в тревоге и управлять своими страхами</h2>
                     <p class="small-articles__item-author">Автор: Екатерина Бельтюкова</p>
                     <p class="small-articles__item-description">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-                    <time pubdate datetime="2021-08-11" class="small-articles__item-pubdate">11.08.2021</time>
+                    <time datetime="2021-08-11" class="small-articles__item-pubdate">11.08.2021</time>
                 </article>
                 <article class="small-articles__item">
                     <ul class="small-articles__item-label">
@@ -203,7 +220,7 @@
                     <h2 class="small-articles__item-title">Как управлять своими эмоциями: 8 шагов</h2>
                     <p class="small-articles__item-author">Автор: Екатерина Бельтюкова</p>
                     <p class="small-articles__item-description">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
-                    <time pubdate datetime="2021-08-07" class="small-articles__item-pubdate">07.08.2021</time>
+                    <time datetime="2021-08-07" class="small-articles__item-pubdate">07.08.2021</time>
                 </article>
                 <article class="small-articles__item">
                     <ul class="small-articles__item-label">
@@ -215,7 +232,7 @@
                     <h2 class="small-articles__item-title">Эмоциональное выгорание - стадии и симптомы, методы восстановления и профилактики</h2>
                     <p class="small-articles__item-author">Автор: Лиза Файнтух под редакцией  Екатерины Бельтюковой</p>
                     <p class="small-articles__item-description">Изначально термин «эмоциональное я...</p>
-                    <time pubdate datetime="2021-08-21" class="small-articles__item-pubdate">21.08.2021</time>
+                    <time datetime="2021-08-21" class="small-articles__item-pubdate">21.08.2021</time>
                 </article>
                 <article class="small-articles__item">
                     <ul class="small-articles__item-label">
@@ -227,7 +244,7 @@
                     <h2 class="small-articles__item-title">Как не утонуть в тревоге и управлять своими страхами</h2>
                     <p class="small-articles__item-author">Автор: Екатерина Бельтюкова</p>
                     <p class="small-articles__item-description">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-                    <time pubdate datetime="2021-08-11" class="small-articles__item-pubdate">11.08.2021</time>
+                    <time datetime="2021-08-11" class="small-articles__item-pubdate">11.08.2021</time>
                 </article>
                 <article class="small-articles__item">
                     <ul class="small-articles__item-label">
@@ -239,7 +256,7 @@
                     <h2 class="small-articles__item-title">Как управлять своими эмоциями: 8 шагов</h2>
                     <p class="small-articles__item-author">Автор: Екатерина Бельтюкова</p>
                     <p class="small-articles__item-description">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
-                    <time pubdate datetime="2021-08-07" class="small-articles__item-pubdate">07.08.2021</time>
+                    <time datetime="2021-08-07" class="small-articles__item-pubdate">07.08.2021</time>
                 </article>
             </div>
         </section>
