@@ -837,29 +837,6 @@ html, body {
     width: 175px;
 }
 
-.footer__contacts-socials-item {
-    outline: 1px solid black;
-    display: block;
-    width: 32px;
-    height: 32px;
-}
-
-.footer__contacts-socials-item_vk {
-    background-image: url(../images/footer-socials-vk-icon.svg);
-}
-
-.footer__contacts-socials-item_tg {
-    background-image: url(../images/footer-socials-tg-icon.svg);
-}
-
-.footer__contacts-socials-item_twitter {
-    background-image: url(../images/footer-socials-twitter-icon.svg);
-}
-
-.footer__contacts-socials-item_dzen {
-    background-image: url(../images/footer-socials-dzen-icon.svg);
-}
-
 .footer__downside {
     display: flex;
     align-items: center;
