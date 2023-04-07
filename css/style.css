@@ -873,3 +873,246 @@ html, body {
         display: none;
     }
 }
+
+/* Страница Article */
+
+.content-article {
+    outline: solid 1px black;
+    width: 100%;
+    min-width: 320px;
+}
+
+.content-article__container {
+    outline: solid 1px black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.article-content {
+    outline: 1px solid black;
+    padding-top: 19px;
+    width: 57.5%;
+}
+
+.article-content__title {
+    margin-top: 57px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #333333;
+}
+
+.article-content__author {
+    margin-top: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.article-content__pubdate::before {
+    content: '\00B7';
+    margin: 0 9px 0 4px;
+}
+
+.article-content__title-image {
+    margin-top: 27px;
+    width: 100%;
+}
+
+.article-content__h2-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.article-content__h3-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.article-content__h3-title_table-of-contents {
+    margin-top: 26px;
+}
+
+.article-content__table-of-contents {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.article-content__table-of-contents ul {
+    margin-left: 32px;
+}
+
+.article-content__table-of-contents li {
+    margin-top: 7px;
+}
+
+.article-content__table-of-contents > li:first-child {
+    margin-top: 0;
+}
+
+.article-content__table-of-contents a {
+    color: #333333;
+}
+
+.article-content__h2-title_chapter-1 {
+    margin-top: 27px;
+}
+
+.article-content__text {
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #333333;
+}
+
+.article-content__quote {
+    background-color: #F3F7FE;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-top: 39px;
+    padding: 35px 24px 22px 24px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+}
+
+.article-content__quote figcaption {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.article-content__h2-title_chapter-2 {
+    margin-top: 29px;
+}
+
+.article-content__listing-in-text {
+    margin-top: 20px;
+    margin-left: 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #333333;
+    list-style-image: url(../images/article-listing-bullet.svg);
+}
+
+.article-content__listing-in-text li {
+    padding-left: 9px;
+}
+
+.article-content__listing-in-text li:nth-child(n+2) {
+    margin-top: 17px;
+}
+
+.article-content__image-1 {
+    margin-top: 23px;
+    width: 100%;
+}
+
+.article-content__image-1 img {
+    width: 100%;
+}
+
+.article-content__image-1 figcaption {
+    margin-top: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14.4px;
+    font-weight: 400;
+    color: #868686;
+}
+
+.article-content__centered-text {
+    outline: 1px solid black;
+    background-image: url(../images/article-centered-text-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 27px;
+    padding: 26px 95px 47px 95px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+}
+
+.article-content__image-left-for-text {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 24px;
+}
+
+.article-content__image-left-for-text img {
+    display: block;
+}
+
+.article-content__image-left-for-text p {
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #333333;
+}
+
+.article-content__exersice {
+    border-radius: 16px;
+    margin-top: 29px;
+    padding: 25px;
+}
+
+.article-content__text_exersice {
+    margin-top: 14px;
+}
+
+.article-content__exersice_1 {
+    background-color: #FEFAEC;
+}
+
+.article-content__h2-title_chapter-3 {
+    margin-top: 33px;
+}
+
+.article-content__listing-in-text_chapter-3 {
+    padding-right: 80px;
+}
+
+.article-content__image-left-for-text_chapter-3 {
+    margin-top: 22px;
+}
+
+.article-content__exersice_2 {
+    background-color: #FFF3EB;
+}
+
+.additional-info {
+    outline: 1px solid black;
+    width: 23.5%;
+    height: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+    .content-article__container {
+        width: 93.75%;
+    }
+}
